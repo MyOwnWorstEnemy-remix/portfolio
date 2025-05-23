@@ -1,0 +1,41 @@
+{
+    "navigation": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "intro": "Hi, my name is",
+        "name": "Yuliia Litvinenko",
+        "tagline": "I’m a front-end developer passionate about coding, problem-solving, and turning ideas into reality. I am looking for a role where I can keep learning, contribute, and make a difference."
+    },
+    "about": {
+        "title": "About Me",
+        "subTitle": "My Journey",
+        "descriptionParagraph_1": "My passion with web development began in school when we created simple websites in computer science classes. We didn't use any special libraries or frameworks, but it was at that moment that strike a spark of love for web development.",
+        "descriptionParagraph_2" : "After I started to build projects some successful, many failures but each one taught me valuable lessons. Unfortunately, at that time at the university the programming languages ​​C/C++ and Python were a prioritized, and studying took up a lot of time. So, my favorite hobby was buried under daily routine... ",
+        "descriptionParagraph_3": "The announcement of the creation of a website for the university by students was a light in a dark. That's when I realized this wasn't just a hobby it was something I could turn into a career. Each project Each project has sharpened my skills, but this is only the beginning of my journey."
+    },
+    "workExperience" :{
+        "time_1" : "01.2022 - 07.2023",
+        "company_1": "PlusOne",
+        "name_1": "Service for sweepstakes and discounts on subscription",
+        "description_1": "Played a role of fron-end developer for service. Service where user can register to participate in the sweepstakes, see the winners, and choose prizes.",
+        "time_2" : "09.2023 - 02.2025",
+        "company_2": "PlusOne",
+        "name_2": "Financial Assistant",
+        "description_2": "Was a layout designer and developer of the service. The service provides tools for tracking your expenses, collects statistics and provides visual reports in the form of graphs."
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "mainTitle": "Hi There!",
+        "description": "I’m currently looking for a front-end developer role. My inbox is always open. Whether you are interested in my profile, have a question or just want to say hi. Feel free to reach out.",
+        "socialMedia": "Connect with me on social media"
+    },
+    "global": {
+        "githubButton": "Check out my Github",
+        "resume": "Download Resume",
+        "contactButton": "Contact Me",
+        "showProject": "View Website"
+    }
+}
