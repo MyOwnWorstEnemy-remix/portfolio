@@ -1,18 +1,28 @@
 import { useTranslation } from 'react-i18next';
 import foto from "../../../assets/foto-dark-mode-filtered.png"
+import { useEffect, useState } from 'react';
 
 function Hero () {
     const {t, i18n} = useTranslation();
+    const [font, setFont] = useState('playpen');
 
     const downloadResume = () => {
         window.open("/Litvinenko.pdf", "_blank");
     };
 
+    useEffect(() => {
+        if(i18n.language === 'ru') {
+            setFont('playpen');
+        } else {
+            setFont('gluten');
+        }
+    }, [i18n.language])
+
     return (
         <section className='pt-10 md:pt-24 flex flex-col-reverse md:flex-row items-start'>
             <div className='w-full md:w-1/2 text-center md:text-left font-montserrat text-white my-auto'>
                 {/* gradient text: "bg-gradient-to-r from-[#ee00ff] via-[#8000ff] to-[#00eeff] text-transparent bg-clip-text" */}
-                <h1 className="font-gluten text-3xl md:text-5xl lg:text-[65px]/[75px] font-semibold mb-3 md:mb-8">
+                <h1 className={`font-${font} text-3xl md:text-5xl lg:text-[65px]/[75px] font-semibold mb-3 md:mb-8`}>
                     {t("hero.intro")}&nbsp;
                     <span>{t("hero.name")}</span>,
                 </h1>
@@ -24,7 +34,7 @@ function Hero () {
                     {t("global.resume")}
                 </button>
             </div>
-            <img class="h-auto max-w-2/6 md:w-4/10 md:max-w-80 lg:max-w-lg mb-10 md:mb-0 mx-auto" src={foto} alt="My foto"/>
+            <img className="h-auto max-w-2/6 md:w-4/10 md:max-w-80 lg:max-w-lg mb-10 md:mb-0 mx-auto" src={foto} alt="My foto"/>
         </section>
     )
 }

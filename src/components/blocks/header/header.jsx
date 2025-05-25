@@ -45,7 +45,7 @@ function Header () {
                     )}
                     <div className="flex gap-2">
                         <button type="button" className='block bg-transparent p-2 border-2 border-transparent rounded-full hover:border-current focus:border-current focus:outline-none focus-visible:outline-none cursor-pointer' onClick={() => changeLanguage('en')}>EN</button>
-                        <button type="button" className='block bg-transparent p-2 border-2 border-transparent rounded-full hover:border-current focus:border-current focus:outline-none focus-visible:outline-none cursor-pointer' onClick={() => changeLanguage('tu')}>RU</button>
+                        <button type="button" className='block bg-transparent p-2 border-2 border-transparent rounded-full hover:border-current focus:border-current focus:outline-none focus-visible:outline-none cursor-pointer' onClick={() => changeLanguage('ru')}>RU</button>
                     </div>
                     {isSmallScreen && (
                         <IconButton edge="end" onClick={toggleDrawer(true)}>
