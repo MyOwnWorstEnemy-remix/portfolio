@@ -1,26 +1,12 @@
-import { useState, useEffect } from 'react';
-import { AppBar, Toolbar, Box, IconButton, Drawer, List, ListItemText, useMediaQuery } from '@mui/material';
+import { useState } from 'react';
+import { AppBar, Toolbar, Box, IconButton, Drawer, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import MenuIcon from '@mui/icons-material/Menu';
 
 function Header () {
     const { t, i18n } = useTranslation();
-    const [opacity, setOpacity] = useState(1);
     const [drawerOpen, setDrawerOpen] = useState(false);
-    const isSmallScreen = useMediaQuery('(max-width: 800px)');
-
-    const handleScroll = () => {
-        const scrollTop = window.scrollY;
-        const newOpacity = scrollTop > 50 ? 90 : 100;
-        setOpacity(newOpacity);
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    const isSmallScreen = useMediaQuery('(max-width: 768px)');
 
     const toggleDrawer = (open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -47,7 +33,7 @@ function Header () {
     };
 
     return (
-        <div className={`fixed top-8 left-1/2 -translate-x-1/2 rounded-full bg-black border border-slate-500 font-montserrat opacity-${opacity} lg:text-lg`}>
+        <div className={`fixed top-8 left-1/2 -translate-x-1/2 rounded-full bg-black border border-slate-500 font-montserrat lg:text-lg z-10`}>
             <AppBar position="static" sx={{ boxShadow: 'none', backgroundColor: 'transparent' }}>
                 <Toolbar className='flex gap-13'>
                     {!isSmallScreen && (
