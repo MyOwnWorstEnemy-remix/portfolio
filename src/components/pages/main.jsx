@@ -1,5 +1,6 @@
-import Header from "../blocks/header/header"
-import Hero from "../blocks/hero/hero";
+import Header from "../blocks/header"
+import Hero from "../blocks/hero";
+import About from "../blocks/about";
 
 function MainPage () {
     return (
@@ -20,6 +21,7 @@ function MainPage () {
                     <Header />
                     <main className="pt-24 md:pt-24 lg:pt-28">
                         <Hero />
+                        <About />
                     </main>
                 </div>
             </div>
