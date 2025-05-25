@@ -54,7 +54,14 @@ function Header () {
                     {!isSmallScreen && (
                         <Box className="flex gap-6">
                             {menuItems.map((item, index) => (
-                                <a key={index} href={item.href} className='shrink-0 text-white px-1 border-b-2 border-transparent hover:text-white/90 hover:border-current focus:border-current focus:outline-none focus-visible:outline-none'>{item.text}</a>
+                                <button 
+                                    key={index} 
+                                    type="button" 
+                                    onClick={() => document.querySelector(item.href).scrollIntoView({ behavior: 'smooth' })} 
+                                    className='cursor-pointer shrink-0 text-white px-1 border-b-2 border-transparent hover:text-white/90 hover:border-current focus:border-current focus:outline-none focus-visible:outline-none'
+                                >
+                                    {item.text}
+                                </button>
                             ))}
                         </Box>
                     )}
