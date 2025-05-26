@@ -5,14 +5,14 @@ import About from "../blocks/about";
 function MainPage () {
     return (
         <>
-            <div className="w-screen dark min-h-screen pb-10 bg-[#0c0c0c] relative overflow-hidden">
+            <div className="w-full dark min-h-screen pb-10 bg-[#0c0c0c] relative overflow-hidden">
                 <div
-                className="absolute inset-0 pointer-events-none z-0"
-                style={{
-                    opacity: "0.04",
-                    background:
-                    "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.6' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")",
-                }}
+                    className="absolute inset-0 pointer-events-none z-0"
+                    style={{
+                        opacity: "0.04",
+                        background:
+                        "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.6' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)'/%3E%3C/svg%3E\")",
+                    }}
                 />
 
                 <div className="absolute top-[5vh] left-[-5%] w-[40vw] h-[40vw] max-w-[400px] max-h-[400px] bg-[#ee00ff12] rounded-full blur-[100px] z-0"></div>
