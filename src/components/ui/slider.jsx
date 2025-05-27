@@ -2,14 +2,6 @@ import {useRef, useState} from 'react';
 import SlideItem from './slide-item';
 import Pagination from './pagination';
 
-const debounce = (func, delay) => {
-    let timeoutId;
-    return (...args) => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => func(...args), delay);
-    };
-};
-
 function Slider ({data}) {
     const carousel = useRef();
     const slide = useRef();
@@ -32,11 +24,9 @@ function Slider ({data}) {
         setIndex(newIndex);
     }
 
-    const debouncedScroll = debounce(handleScroll, 100);
-
     return (
         <div className='w-full md:w-7/10'>
-            <ul className='flex gap-3 overflow-x-scroll no-scrollbar scroll-smooth snap-x snap-mandatory mb-5' ref={carousel} onScroll={debouncedScroll}>
+            <ul className='flex gap-3 overflow-x-scroll no-scrollbar scroll-smooth snap-x snap-mandatory mb-5' ref={carousel} onScroll={handleScroll}>
                 {data.map(item => 
                     <li key={item.id} className='snap-start snap-always' ref={slide}>
                         <SlideItem item={item}/>
