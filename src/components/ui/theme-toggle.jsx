@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import { useThemeDetector } from "../../hooks/hooks";
 
 function ThemeToggle () {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useThemeDetector();
 
     const onToggleClick = () => {
         document.querySelector('html').classList.toggle('dark');
