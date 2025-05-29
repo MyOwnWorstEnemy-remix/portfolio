@@ -21,3 +21,5 @@
   --font-playpen: "Playpen Sans", cursive;
   --font-gluten: "Gluten", cursive;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));

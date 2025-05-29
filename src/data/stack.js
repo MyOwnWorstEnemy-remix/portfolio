@@ -14,7 +14,7 @@ export const stack = [
     {
         "id": 0,
         "title": "JavaScript",
-        "bgColor": "bg-[#c3c99e]",
+        "bgColor": "bg-[#eae9b2]",
         "icon": js
     },
     {
@@ -26,13 +26,13 @@ export const stack = [
     {
         "id": 2,
         "title": "React",
-        "bgColor": "bg-[#6895a2]",
+        "bgColor": "bg-[#839bbf]",
         "icon": react
     },
     {
         "id": 3,
         "title": "HTML",
-        "bgColor": "bg-[#ddbfb6]",
+        "bgColor": "bg-[#eac8be]",
         "icon": html
     },
     {
@@ -50,7 +50,7 @@ export const stack = [
     {
         "id": 6,
         "title": "Styled Components",
-        "bgColor": "bg-[#f7ece8]",
+        "bgColor": "bg-[#f9e1d8]",
         "icon": styled
     },
     {

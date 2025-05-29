@@ -18,7 +18,7 @@ function Projects () {
 
     return (
         <section className='py-16 md:py-20 lg:py-24 font-montserrat' id="projects">
-            <SectionTitle text={t("projects.title")} font={font} bgColor={"bg-[#ee00ff]/50"} />
+            <SectionTitle text={t("projects.title")} font={font} bgColor={"bg-[#ff7b00]/60 dark:bg-[#ee00ff]/50"} />
             <ul className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8'>
                 {projects.map(item => 
                     <li key={item.translate}>

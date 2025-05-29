@@ -1,4 +1,5 @@
 import project_0_dark from "../assets/projects-preview/project-0-dark.jpg";
+import project_0_light from "../assets/projects-preview/project-0-light.jpg";
 import project_1 from "../assets/projects-preview/project-1.png";
 import project_2 from "../assets/projects-preview/project-2.png";
 import project_3 from "../assets/projects-preview/project-3.png";
@@ -8,7 +9,7 @@ export const projects = [
         translate: "project_0",
         href: "https://portfolio-git-main-myownworstenemy-remixs-projects.vercel.app/",
         previewLight: project_0_dark,
-        previewDark: project_0_dark,
+        previewDark: project_0_light,
         alt: "Portfolio - Web development project featuring React, Tailwind, Vite",
         tech: ["React", "Vite", "Tailwind", "MUI", "i18next"],
     },

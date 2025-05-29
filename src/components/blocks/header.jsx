@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Box, IconButton, Drawer, useMediaQuery } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import MenuIcon from '@mui/icons-material/Menu';
+import { paperClasses } from "@mui/material/Paper";
+import ThemeToggle from '../ui/theme-toggle';
 
 function Header () {
     const { t, i18n } = useTranslation();
@@ -48,7 +50,7 @@ function Header () {
     };
 
     return (
-        <div className={`fixed top-8 left-1/2 -translate-x-1/2 rounded-full bg-black border border-slate-500 ${opacity} font-montserrat lg:text-lg z-10`}>
+        <div className={`fixed top-8 left-1/2 -translate-x-1/2 rounded-full bg-[#f0d0b3] border-[#d69e66] dark:bg-black border dark:border-slate-500 ${opacity} font-montserrat lg:text-lg z-10`}>
             <AppBar position="static" sx={{ boxShadow: 'none', backgroundColor: 'transparent' }}>
                 <Toolbar className='flex gap-13'>
                     {!isSmallScreen && (
@@ -58,7 +60,7 @@ function Header () {
                                     key={index} 
                                     type="button" 
                                     onClick={() => document.querySelector(item.href).scrollIntoView({ behavior: 'smooth' })} 
-                                    className='cursor-pointer shrink-0 text-white px-1 border-b-2 border-transparent hover:text-white/90 hover:border-current focus:border-current focus:outline-none focus-visible:outline-none'
+                                    className='cursor-pointer shrink-0 text-[#3d271a] dark:text-white px-1 border-b-2 border-transparent hover:border-current focus:border-current focus:outline-none focus-visible:outline-none'
                                 >
                                     {item.text}
                                 </button>
@@ -66,33 +68,39 @@ function Header () {
                         </Box>
                     )}
                     <div className="flex gap-2">
-                        <button type="button" className='block bg-transparent p-2 border-2 border-transparent rounded-full hover:border-current focus:border-current focus:outline-none focus-visible:outline-none cursor-pointer' onClick={() => changeLanguage('en')}>EN</button>
-                        <button type="button" className='block bg-transparent p-2 border-2 border-transparent rounded-full hover:border-current focus:border-current focus:outline-none focus-visible:outline-none cursor-pointer' onClick={() => changeLanguage('ru')}>RU</button>
+                        <button type="button" className='block bg-transparent text-[#3d271a] dark:text-white p-2 border-2 border-transparent rounded-full hover:border-current focus:border-current focus:outline-none focus-visible:outline-none cursor-pointer' onClick={() => changeLanguage('en')}>EN</button>
+                        <button type="button" className='block bg-transparent text-[#3d271a] dark:text-white p-2 border-2 border-transparent rounded-full hover:border-current focus:border-current focus:outline-none focus-visible:outline-none cursor-pointer' onClick={() => changeLanguage('ru')}>RU</button>
                     </div>
+                    <ThemeToggle />
                     {isSmallScreen && (
                         <IconButton edge="end" onClick={toggleDrawer(true)}>
-                            <MenuIcon className='text-[#00eeffd2]' />
+                            <MenuIcon className='text-[#3d271a] dark:text-[#00eeffd2]' />
                         </IconButton>
                     )}
                 </Toolbar>
             </AppBar>
             <Drawer 
                 anchor="right" 
+                className='bg-[#f5cea6] dark:bg-[#0c0c0c]'
                 open={drawerOpen} 
                 onClose={toggleDrawer(false)}
                 slotProps={{ paper: {
                     sx: {
                         width: { xs: '80%', sm: '250px' },
                         height: { xs: '100%', sm: '100%' },
-                        background: '#0c0c0c',
                     },
                     
                 }}}
+                sx={{
+                    [`& .${paperClasses.root}`]: {
+                        backgroundColor: 'inherit'
+                    }
+                }}
             >
                 <ul className='flex flex-col gap-y-2 pt-8'>
                     {menuItems.map((item, index) => (
-                        <div key={index} onClick={() => handleMenuItemClick(item.href)} className='cursor-pointer p-4 transition-colors ease-in-out duration-300 hover:bg-[#00eeffd2]/20'>
-                            <span  className='text-white font-montserrat'>{item.text}</span>
+                        <div key={index} onClick={() => handleMenuItemClick(item.href)} className='cursor-pointer p-4 transition-colors ease-in-out duration-300 hover:bg-[#d69e66]/20 dark:hover:bg-[#00eeffd2]/20'>
+                            <span  className='text-[#3d271a] dark:text-white font-montserrat'>{item.text}</span>
                         </div>
                     ))}
                 </ul>
