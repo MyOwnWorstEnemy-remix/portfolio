@@ -62,6 +62,8 @@
         "githubButton": "Посмотрите мой Github",
         "resume": "Загрузить резюме",
         "contactButton": "Связаться",
-        "showProject": "Посмотреть сайт"
+        "showProject": "Посмотреть сайт",
+        "notifyUnavailable": "Эта страница пока в разработке. Оставайтесь на связи!",
+        "showAll": "ПОКАЗАТЬ ВСЁ"
     }
 }

@@ -61,6 +61,8 @@
         "githubButton": "Check out my Github",
         "resume": "Download Resume",
         "contactButton": "Contact Me",
-        "showProject": "View Website"
+        "showProject": "View Website",
+        "notifyUnavailable": "This page is under construction. Stay tuned!",
+        "showAll": "SEE ALL"
     }
 }
