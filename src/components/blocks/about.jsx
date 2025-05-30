@@ -1,3 +1,4 @@
+import { useFont } from '../../hooks/hooks';
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
 import SectionTitle from '../ui/section-title';
@@ -6,15 +7,7 @@ import Stack from './stack';
 
 function About () {
     const {t, i18n} = useTranslation();
-    const [font, setFont] = useState('font-playpen');
-
-    useEffect(() => {
-        if(i18n.language === 'ru') {
-            setFont('font-playpen');
-        } else {
-            setFont('font-gluten');
-        }
-    }, [i18n.language])
+    const font = useFont();
 
     return (
         <section className='py-16 md:py-20 lg:py-24 font-montserrat' id="about">

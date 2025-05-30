@@ -1,23 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import darkThemedFoto from "../../assets/foto-dark-mode-filtered.png"
 import lightThemedFoto from "../../assets/foto-light-mode-filtered.png"
-import { useEffect, useState } from 'react';
+import { useFont } from '../../hooks/hooks';
 
 function Hero () {
     const {t, i18n} = useTranslation();
-    const [font, setFont] = useState('font-playpen');
+    const font = useFont();
 
     const downloadResume = () => {
         window.open("/Litvinenko.pdf", "_blank");
     };
-
-    useEffect(() => {
-        if(i18n.language === 'ru') {
-            setFont('font-playpen');
-        } else {
-            setFont('font-gluten');
-        }
-    }, [i18n.language])
 
     return (
         <section className='py-10 md:py-24 lg:py-20 flex flex-col-reverse md:flex-row items-start'>
