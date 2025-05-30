@@ -3,6 +3,7 @@ import project_0_light from "../assets/projects-preview/project-0-light.jpg";
 import project_1 from "../assets/projects-preview/project-1.png";
 import project_2 from "../assets/projects-preview/project-2.png";
 import project_3 from "../assets/projects-preview/project-3.png";
+import project_4 from "../assets/projects-preview/project-4.png";
 
 export const projects = [
     {
@@ -16,7 +17,7 @@ export const projects = [
     {
         translate: "project_4",
         href: "https://coolnews.vercel.app/",
-        preview: "",
+        preview: project_4,
         alt: "CoolNews - Web development project featuring React, TS, Vite, styled-components",
         tech: ["React", "Vite", "TS", "MUI", "styled-components"],
         inProgress: true,

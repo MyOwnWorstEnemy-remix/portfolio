@@ -4,7 +4,7 @@ function ProjectCard ({card}) {
     const {t, i18n} = useTranslation();
 
     return (
-        <div className='relative overflow-hidden rounded-xl border border-[#f1decc] dark:border-white/5 bg-[#f0d9c3c7] dark:bg-[#111111] transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,0,0,0.1)] dark:hover:shadow-[0_0_25px_rgba(128,0,255,0.1)] hover:border-[#ff000020] dark:hover:border-[#8000ff20]'>
+        <div className='relative overflow-hidden h-full rounded-xl border border-[#f1decc] dark:border-white/5 bg-[#f0d9c3c7] dark:bg-[#111111] transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,0,0,0.1)] dark:hover:shadow-[0_0_25px_rgba(128,0,255,0.1)] hover:border-[#ff000020] dark:hover:border-[#8000ff20]'>
             <div className='aspect-[16/9] w-full overflow-hidden'>
                 {card.previewLight && <img src={card.previewLight} className='w-full h-full object-cover transition-transform duration-500 block dark:hidden' alt={card.alt} />}
                 {card.previewDark && <img src={card.previewDark} className='w-full h-full object-cover transition-transform duration-500 hidden dark:block' alt={card.alt} />}
