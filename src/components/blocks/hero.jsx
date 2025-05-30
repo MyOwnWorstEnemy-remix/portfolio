@@ -27,8 +27,8 @@ function Hero () {
                     {t("global.resume")}
                 </button>
             </div>
-            <img className="h-auto max-w-2/6 md:w-4/10 md:max-w-80 lg:max-w-lg mb-10 md:mb-0 mx-auto hidden dark:block" src={darkThemedFoto} alt="My foto"/>
-            <img className="h-auto max-w-2/6 md:w-4/10 md:max-w-80 lg:max-w-lg mb-10 md:mb-0 mx-auto block dark:hidden" src={lightThemedFoto} alt="My foto"/>
+            <img className="h-auto max-h-[512px] max-w-2/6 md:w-4/10 md:max-w-80 lg:max-w-lg object-contain mb-10 md:mb-0 mx-auto hidden dark:block" src={darkThemedFoto} alt="My foto"/>
+            <img className="h-auto max-h-[512px] max-w-2/6 md:w-4/10 md:max-w-80 lg:max-w-lg object-contain mb-10 md:mb-0 mx-auto block dark:hidden" src={lightThemedFoto} alt="My foto"/>
         </section>
     )
 }

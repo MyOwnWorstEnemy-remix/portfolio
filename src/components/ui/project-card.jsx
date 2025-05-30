@@ -29,8 +29,8 @@ function ProjectCard ({card}) {
                 </a>
             </div>
             {card.inProgress && 
-                <div className='absolute top-0 bg-amber-200 -rotate-45 p-3.5 w-80 flex justify-center -translate-x-22 translate-y-10'>
-                    <span>{t(`projects.${card.translate}.inProgress`)}</span>
+                <div className='absolute top-0 bg-amber-200 -rotate-45 p-3.5 w-52 lg:w-80 flex justify-center -translate-x-15 translate-y-6 lg:-translate-x-22 lg:translate-y-10'>
+                    <span className='text-xs lg:text-base'>{t(`projects.${card.translate}.inProgress`)}</span>
                 </div>
             }
         </div>
