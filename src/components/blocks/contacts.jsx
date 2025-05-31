@@ -18,7 +18,7 @@ function Contacts () {
                     {t("contact.mainTitle")}
                 </h3>
 
-                <div className="space-y-5 flex-grow relative z-10">
+                <div className="space-y-5 flex-grow relative">
                     <p className="text-[#311409]/80 dark:text-white/80 unselectable text-xs sm:text-sm leading-relaxed border-l-2 border-[#ffd700]/60 dark:border-[#00eeff]/30 pl-4 py-1">
                         {t("contact.description")}
                     </p>
