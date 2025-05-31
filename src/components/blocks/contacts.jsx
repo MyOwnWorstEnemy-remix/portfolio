@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useFont } from "../../hooks/hooks";
 import SectionTitle from "../ui/section-title";
+import SocialIcon from "../ui/social-icon";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsGithub, BsTelegram } from "react-icons/bs";
 
@@ -44,22 +45,8 @@ function Contacts () {
                             {t("contact.socialMedia")}
                         </p>
                         <div className="flex space-x-3">
-                            <a
-                                href="https://github.com/MyOwnWorstEnemy-remix"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-9 h-9 rounded-full bg-[#ffa700]/15 dark:bg-[#ffffff0c] flex items-center justify-center text-[#1b1202]/80 dark:text-white/50 hover:text-[#1b1202] dark:hover:text-white hover:bg-[#ffa700]/20 dark:hover:bg-[#ffffff12] transition-all duration-300 hover:scale-110"
-                            >
-                                <BsGithub />
-                            </a>
-                            <a
-                                href="https://t.me/Ulia_Litvinenko"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-9 h-9 rounded-full bg-[#ffa700]/15 dark:bg-[#ffffff0c] flex items-center justify-center text-[#1b1202]/80 dark:text-white/50 hover:text-[#1b1202] dark:hover:text-white hover:bg-[#ffa700]/20 dark:hover:bg-[#ffffff12] transition-all duration-300 hover:scale-110"
-                            >
-                                <BsTelegram />
-                            </a>
+                            <SocialIcon href={"https://github.com/MyOwnWorstEnemy-remix"} bgColor={"bg-[#ffa700]/15 dark:bg-[#ffffff0c]"} icon={<BsGithub />} />
+                            <SocialIcon href={"https://t.me/Ulia_Litvinenko"} bgColor={"bg-[#ffa700]/15 dark:bg-[#ffffff0c]"} icon={<BsTelegram />} />
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
-import Header from "../blocks/header"
+import Header from "../blocks/header";
+import SocialSidebar from "../blocks/social-sidebar";
 import Hero from "../blocks/hero";
 import About from "../blocks/about";
 import Projects from "../blocks/projects";
@@ -27,6 +28,7 @@ function MainPage () {
                         <Projects />
                         <Contacts />
                     </main>
+                    <SocialSidebar />
                     <Footer />
                 </div>
             </div>
