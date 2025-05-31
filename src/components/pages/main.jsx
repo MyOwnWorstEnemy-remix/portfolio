@@ -3,6 +3,7 @@ import Hero from "../blocks/hero";
 import About from "../blocks/about";
 import Projects from "../blocks/projects";
 import Contacts from "../blocks/contacts";
+import Footer from "../blocks/footer";
 
 function MainPage () {
     return (
@@ -26,6 +27,7 @@ function MainPage () {
                         <Projects />
                         <Contacts />
                     </main>
+                    <Footer />
                 </div>
             </div>
         </>
