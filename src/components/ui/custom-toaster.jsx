@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 function CustomToaster ({tst, text}) {
     return (
         <div 
-            className="rounded-xl flex items-center gap-3 px-5 py-7 cursor-pointer bg-[#ff000020] dark:bg-[#111111] border border-[#c27676] dark:border-[#00eeff]/50 text-[#ff0000]/40 dark:text-[#00eeff]/50 hover:text-[#ff0000]/70 dark:hover:text-[#00eeff]/70"
+            className="rounded-xl flex items-center gap-3 px-5 py-7 cursor-pointer bg-[#ffdbcb] dark:bg-[#111111] border border-[#c27676] dark:border-[#00eeff]/50 text-[#ff0000]/40 dark:text-[#00eeff]/50 hover:text-[#ff0000]/70 dark:hover:text-[#00eeff]/70"
             onClick={() => toast.dismiss(tst.id)}
         >
             <button
