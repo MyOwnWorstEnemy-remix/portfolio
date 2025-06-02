@@ -17,14 +17,18 @@
         "descriptionParagraph_3": "The announcement of the creation of a website for the university by students was a light in a dark. That's when I realized this wasn't just a hobby it was something I could turn into a career. Each project Each project has sharpened my skills, but this is only the beginning of my journey."
     },
     "workExperience" :{
-        "time_1" : "01.2022 - 07.2023",
-        "company_1": "PlusOne",
-        "name_1": "Service for sweepstakes and discounts on subscription",
-        "description_1": "Played a role of fron-end developer for service. Service where user can register to participate in the sweepstakes, see the winners, and choose prizes.",
-        "time_2" : "09.2023 - 02.2025",
-        "company_2": "PlusOne",
-        "name_2": "Financial Assistant",
-        "description_2": "Was a layout designer and developer of the service. The service provides tools for tracking your expenses, collects statistics and provides visual reports in the form of graphs."
+        "place_0": {
+            "name": "Igor Sikorsky Kyiv Polytechnic Institute",
+            "description": "I graduated with a Master's degree in Applied Mathematics"
+        },
+        "place_1": {
+            "name": "Service for sweepstakes and discounts on subscription",
+            "description": "Played a role of fron-end developer for service. Service where user can register to participate in the sweepstakes, see the winners, and choose prizes."
+        },
+        "place_2": {
+            "name": "Financial Assistant",
+            "description": "Was a layout designer and developer of the service. The service provides tools for tracking your expenses, collects statistics and provides visual reports in the form of graphs."
+        }
     },
     "stack": "years of XP with the most popular ecosystem frontend",
     "projects": {

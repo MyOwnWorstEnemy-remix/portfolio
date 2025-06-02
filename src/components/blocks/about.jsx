@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import SectionTitle from '../ui/section-title';
 import ExperienceCard from '../ui/experience-card';
 import Stack from './stack';
+import { experiense } from '../../data/experience';
 
 function About () {
     const {t, i18n} = useTranslation();
@@ -37,8 +38,9 @@ function About () {
                         <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#ff0000]/40 via-[#ff7b00]/40 to-[#f7fb1e]/50 dark:from-[#ee00ff]/40 dark:via-[#8000ff]/40 dark:to-[#00eeff]/40 ml-[7px] rounded-full"></div>
 
                         <div className="flex flex-col gap-5 h-full">
-                            <ExperienceCard index={1} bgColor={"bg-[#ff0000]/40 dark:bg-[#ee00ff]/20"} borderColor={"border-[#ff0000]/40 dark:border-[#ee00ff]/50"} />
-                            <ExperienceCard index={2} bgColor={"bg-[#ff7b00]/40 dark:bg-[#8000ff]/20"} borderColor={"border-[#ff7b00]/60 dark:border-[#8000ff]/50"} />
+                            {experiense.map((item) => 
+                                <ExperienceCard data={item} />
+                            )}
                         </div>
                     </div>
                 </div>
